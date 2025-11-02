@@ -6,6 +6,7 @@
   --main-color: #0065fc;
   --main-bg-color: #f2f2f2;
   --filter-bg-color: #deebff;
+  --card-bg-color: #d9d9d9;
 }
 
 .fa-solid {
@@ -25,25 +26,158 @@ body {
   box-sizing: border-box;
 }
 
+/*nav*/
 nav {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 30px;
 }
 
-.menu_principal {
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#logo img {
+  max-height: 20px;
+  height: auto;
+}
+
+#menu_principal {
   display: flex;
   gap: 70px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
+#menu_principal a {
+  display: block;
+  padding: 20px 0;
+}
+
+#menu_principal a:hover {
+  color: var(--main-color);
+  cursor: pointer;
+  border-top: 3px solid var(--main-color);
+}
+
+/*********/
 
 a {
   color: inherit;
   text-decoration: none;
 }
 
+h1 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.sub-title {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+/* bouton rechercher*/
+#rechercher {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+#rechercher input {
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  padding: 14px 0 14px 0;
+  border: 1px solid var(--main-bg-color);
+  border-left: 0;
+  border-right: 0;
+}
+
+.fa-location-dot {
+  background: var(--filter-bg-color);
+  padding: 15px;
+  font-size: 16px;
+  color: black;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.bouton {
+  padding: 15px 20px 15px 20px;
+  font-size: 14px;
+  background: var(--main-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
 .section-title {
   margin: 0;
   font-size: 22px;
+}
+
+/*Filtres*/
+.filtres {
+  font-size: 16px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.filtres a {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  padding: 0 14px 0 20px;
+  border: 2px solid var(--card-bg-color);
+  border-radius: 25px;
+  margin: 14px 14px 14px 0;
+}
+
+.filtres i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 21px;
+  height: 40px;
+  margin-right: 12px;
+}
+
+.filtres a:hover {
+  background-color: var(--filter-bg-color);
+  box-shadow: 0 2px 12px 0 rgba(0, 101, 252, 0.05);
+}
+
+/*Info*/
+.info i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--card-bg-color);
+  border-radius: 50%;
+  font-size: 10px;
+  color: var(--main-color);
+  width: 20px;
+  height: 20px;
+}
+
+.info p {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 0 0 14px 0;
+  gap: 10px;
 }
 
 .card {
@@ -86,6 +220,30 @@ a {
 /****** Hebergements ***********/
 .hebergements {
   width: 65%;
+}
+
+.hebergements-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.hebergements-cards {
+  margin-top: 30px; /* crée l’espace juste sous le h2 */
+}
+
+.hebergements-cards .card {
+  background: #fff;
+  border-radius: 20px;
+}
+
+.hebergements-cards img {
+  width: 100%;
+  height: 100px; /* même hauteur pour toutes */
+  object-fit: cover; /* recadrage propre */
+  display: block;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 /****** Populaires ***********/
@@ -131,6 +289,46 @@ a {
 
 .populaires-cards .card-rating {
   margin-bottom: 5px;
+}
+
+footer {
+  background-color: #f2f2f2;
+  width: 100%;
+  padding: 10px 0 10px 50px;
+  color: #111;
+  margin-top: 60px;
+}
+
+.footer-container {
+  display: flex;
+  gap: 260px; /* Espace entre les colonnes, ajuste au besoin*/
+  padding-left: 50px;
+}
+
+footer h3 {
+  margin-bottom: 14px;
+  font-weight: bold;
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer a {
+  display: block;
+  color: #111;
+  text-decoration: none;
+  font-size: 16px;
+  margin-bottom: 4px;
+  line-height: 30px;
+}
+
+footer a:hover {
+  color: #0065fc;
+}
+
+footer li {
+  list-style: none;
 }
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
