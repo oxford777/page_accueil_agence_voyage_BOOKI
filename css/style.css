@@ -215,6 +215,7 @@ h1 {
   border-radius: 20px;
   padding: 30px;
   box-sizing: border-box;
+  margin-bottom: 40px;
 }
 
 /****** Hebergements ***********/
@@ -226,24 +227,42 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
-}
-
-.hebergements-cards {
-  margin-top: 30px; /* crée l’espace juste sous le h2 */
+  margin-top: 30px;
 }
 
 .hebergements-cards .card {
-  background: #fff;
   border-radius: 20px;
+}
+
+.hebergements-cards .card-title,
+.hebergements-cards .card p,
+.hebergements-cards .card-rating {
+  padding-left: 10px;
+}
+
+.hebergements-cards .card-title,
+.hebergements-cards .card p {
+  margin: 8px 0;
+}
+
+.hebergements-cards .card-rating {
+  margin-bottom: 5px;
 }
 
 .hebergements-cards img {
   width: 100%;
-  height: 100px; /* même hauteur pour toutes */
+  height: 115px; /* même hauteur pour toutes */
   object-fit: cover; /* recadrage propre */
   display: block;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+}
+
+.more {
+  display: inline-block;
+  margin-top: 30px;
+  font-weight: 700;
+  font-size: 18px;
 }
 
 /****** Populaires ***********/
@@ -291,27 +310,70 @@ h1 {
   margin-bottom: 5px;
 }
 
-footer {
-  background-color: #f2f2f2;
+/*Activités*/
+.activites .section-title {
+  padding-bottom: 30px;
+}
+
+.activites-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: nowrap; /* les cartes restent sur une seule ligne */
+}
+
+.activites-card a {
+  display: block;
+  width: 25%; /* 4 cartes sur une ligne */
+}
+
+.activites-card .card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0 0 5px 0;
+}
+
+.activites-card .card img {
   width: 100%;
-  padding: 10px 0 10px 50px;
+  height: 400px; /* même hauteur pour toutes les images */
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: block;
+}
+
+.activites-card .card-title {
+  padding: 5px 14px;
+}
+
+.hebergements-and-populaires .activites {
+  background-color: white;
+}
+
+/*Footer*/
+footer {
+  background-color: var(--main-bg-color);
+  width: 100%;
+  padding: 10px 0 10px 0;
   color: #111;
-  margin-top: 60px;
+  margin-top: 0;
 }
 
 .footer-container {
   display: flex;
-  gap: 260px; /* Espace entre les colonnes, ajuste au besoin*/
-  padding-left: 50px;
+  gap: 260px;
 }
 
 footer h3 {
   margin-bottom: 14px;
-  font-weight: bold;
+  font-size: 18px;
+  font-weight: 700;
+  padding-left: 15px;
 }
 
 footer ul {
-  padding-left: 0;
+  padding-left: 15px;
 }
 
 footer a {
