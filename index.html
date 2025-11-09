@@ -29,14 +29,14 @@
           </div>
 
           <ul id="menu_principal">
-            <li><a href="#">Hébergements</a></li>
-            <li><a href="#">Activités</a></li>
+            <li><a href="#hebergements">Hébergements</a></li>
+            <li><a href="#activites">Activités</a></li>
           </ul>
         </nav>
         <h1>Trouver votre hébergement pour des vacances de rêves</h1>
         <p class="sub-title">En plein centre ville ou en pleine nature</p>
 
-        <section>
+        <div>
           <form action="#" method="get" id="rechercher">
             <label for="ville"></label>
             <i class="fa-solid fa-location-dot"></i>
@@ -46,11 +46,14 @@
               id="ville"
               placeholder="Marseille, France"
             />
-            <button class="bouton" type="submit">Rechercher</button>
+            <button class="bouton" type="submit">
+              <span>Rechercher</span>
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
           </form>
-        </section>
+        </div>
 
-        <section class="filtres">
+        <div class="filtres">
           <span>Filtres</span>
           <a href="#">
             <i class="fa-solid fa-money-bill-wave"></i>
@@ -68,19 +71,19 @@
             <i class="fa-solid fa-fire"></i>
             Nos pépites
           </a>
-        </section>
+        </div>
 
-        <section class="info">
+        <div class="info">
           <p>
             <i class="fa-solid fa-info"></i>
             Plus de 500 logements sont disponibles dans cette ville
           </p>
-        </section>
+        </div>
       </header>
 
       <main>
         <div class="hebergements-and-populaires">
-          <section class="hebergements">
+          <section id="hebergements">
             <h2 class="section-title">Hébergements à Marseille</h2>
             <div class="hebergements-cards">
               <a href="#">
@@ -328,12 +331,13 @@
             </div>
           </section>
 
-          <section class="activites">
+          <section id="activites">
             <h2 class="section-title">Activités à Marseille</h2>
             <div class="activites-card">
               <a href="#">
                 <article class="card">
                   <img
+                    class="image"
                     src="images/activites/reno-laithienne.jpg"
                     alt="vieux port"
                   />
@@ -344,6 +348,7 @@
               <a href="#">
                 <article class="card">
                   <img
+                    class="image"
                     src="images/activites/paul-hermann.jpg"
                     alt="Fort de Pomègues"
                   />
@@ -354,16 +359,18 @@
               <a href="#">
                 <article class="card">
                   <img
+                    class="image"
                     src="images/activites/kilyan-sockalingum.jpg"
                     alt="Parc National des Calanques"
                   />
-                  <h3>Parc National des Calanques</h3>
+                  <h3 class="card-title">Parc National des Calanques</h3>
                 </article>
               </a>
 
               <a href="#">
                 <article class="card">
                   <img
+                    class="image"
                     src="images/activites/florian-wehde.jpg"
                     alt="Notre-Dame-de-la-Garde"
                   />
