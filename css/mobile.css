@@ -3,17 +3,24 @@
   .main-container {
     padding: 0;
   }
-  header {
+  /*header {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  }*/
   #logo {
     justify-content: center;
     padding: 20px 0 10px;
   }
-  h1 p {
-    text-align: center;
+
+  h1,
+  header p,
+  #rechercher,
+  .filtres,
+  .info {
+    padding-left: 20px;
+    padding-right: 20px;
   }
+
   nav {
     flex-direction: column;
     align-items: center;

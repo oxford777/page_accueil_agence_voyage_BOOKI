@@ -208,6 +208,12 @@ h1 {
   gap: 30px;
   margin-top: 30px;
 }
+
+.hebergements-cards .card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
 .hebergements-cards .card-title,
 .hebergements-cards .card p,
 .hebergements-cards .card-rating {
@@ -288,6 +294,7 @@ h1 {
 }
 .activites-card .card {
   background: var(--body-bg-color);
+  height: 100%;
   overflow: hidden;
   padding: 0 0 5px 0;
 }
