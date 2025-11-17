@@ -45,6 +45,11 @@
   .bouton span {
     display: none;
   }
+
+#rechercher{
+    justify-content: center;
+}
+
   /* On affiche l’icône */
   .bouton i {
     display: inline-block;
@@ -57,10 +62,17 @@
   }
   .filtres {
     flex-wrap: wrap;
+    gap: 10px;
   }
+
+.filtres i{
+    margin-right: 8px;
+}
+
   .filtres a {
     flex: 0 0 auto;
     min-width: 120px;
+    padding: 0 0 0 10px;
   }
   .hebergements-and-populaires {
     flex-direction: column;
