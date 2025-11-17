@@ -70,7 +70,6 @@ h1 {
 /* bouton rechercher*/
 #rechercher {
   display: flex;
-  align-items: center;
   margin: 20px 0;
 }
 #rechercher input {
